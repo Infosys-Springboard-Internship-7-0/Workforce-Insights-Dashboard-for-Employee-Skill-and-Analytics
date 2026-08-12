@@ -1,0 +1,34 @@
+# ==============================================================================
+# AI Workforce Assistant Platform — backend requirements
+# Verified against latest PyPI releases, Aug 2026.
+# ==============================================================================
+
+# ---- Web framework ----
+fastapi==0.141.1
+uvicorn[standard]==0.35.0
+pydantic==2.13.4
+pydantic-settings==2.15.0
+email-validator==2.2.0
+python-dotenv==1.0.1
+python-multipart==0.0.20
+
+# ---- Database (admin/team/documents/powerbi metadata) ----
+sqlalchemy==2.0.51
+
+# ---- RAG ----
+chromadb==1.5.9
+sentence-transformers==5.7.0
+groq==1.6.0
+pypdf==6.15.0
+python-docx==1.2.0
+
+# ---- Data viewer ----
+pandas>=2.2,<3.0
+
+# ---- Security ----
+pyjwt==2.13.0
+bcrypt==5.0.0
+
+# ---- Testing ----
+pytest==8.3.4
+httpx==0.28.1
