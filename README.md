@@ -1,6 +1,6 @@
 <div align="center">
 
-# AI-Powered Workforce Analytics & Talent Intelligence Dashboard
+# Workforce Insights Dashboard for Employee Skill and Analytics
 
 ### Transforming Workforce Data into Intelligent Business Decisions
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-This project focuses on building an AI-powered workforce analytics and talent intelligence dashboard that helps organizations make faster and better decisions across workforce planning, employee engagement, talent development, diversity, attrition, recruitment effectiveness, and organizational health.
+This project focuses on building an Workforce Insights Dashboard for Employee Skill and Analytics that helps organizations make faster and better decisions across workforce planning, employee engagement, talent development, diversity, attrition, recruitment effectiveness, and organizational health.
 
 The solution combines large language models, retrieval-augmented generation, predictive analytics, semantic search, and agentic AI workflows to transform fragmented HR data into strategic business intelligence. It is designed to support HR leaders, business stakeholders, and executives with real-time insights and conversational access to workforce information.
 
@@ -174,7 +174,7 @@ This project is released under the MIT License. See the [LICENSE](LICENSE) file 
 ## 🤝 Contributing
 
 Contributions are welcome through the project repository:
-[AI-Powered Workforce Analytics & Talent Intelligence Dashboard](https://github.com/Infosys-Springboard-Internship-7-0/AI-Powered-Workforce-Analytics-Talent-Intelligence-Dashboard)
+[Workforce Insights Dashboard for Employee Skill and Analytics](https://github.com/Infosys-Springboard-Internship-7-0/Workforce-Insights-Dashboard-for-Employee-Skill-and-Analytics)
 
 ### Contribution Steps
 

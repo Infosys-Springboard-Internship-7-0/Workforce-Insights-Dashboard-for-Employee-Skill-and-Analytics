@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Thank you for contributing to the AI-Powered Workforce Analytics & Talent Intelligence Dashboard.
+Thank you for contributing to the Workforce Insights Dashboard for Employee Skill and Analytics.
 
 ## How to Contribute
 
