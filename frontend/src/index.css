@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Design tokens — professional, sharp-edged, light theme.
+   No rounded corners anywhere by design (radius tokens intentionally 0).
+   ========================================================================== */
+@theme {
+  --color-ink-900: #0f172a;
+  --color-ink-800: #1e293b;
+  --color-ink-700: #334155;
+  --color-ink-500: #64748b;
+  --color-ink-300: #cbd5e1;
+  --color-ink-100: #f1f5f9;
+  --color-ink-50: #f8fafc;
+
+  --color-accent-700: #1d4ed8;
+  --color-accent-600: #2563eb;
+  --color-accent-500: #3b82f6;
+  --color-accent-100: #dbeafe;
+
+  --color-danger-600: #dc2626;
+  --color-success-600: #16a34a;
+
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --radius-none: 0px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-ink-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/* Deliberate, minimal exception: circular avatar/status dots read as
+   sharp-professional even with a radius, since they represent people/status. */
+.allow-round {
+  border-radius: 9999px !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-300);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-500);
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--color-ink-100);
+}
+
+.btn-primary {
+  background: var(--color-ink-900);
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  transition: background 0.15s ease;
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-accent-700);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--color-ink-900);
+  border: 1px solid var(--color-ink-300);
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  transition: all 0.15s ease;
+}
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--color-ink-900);
+}
+
+.btn-danger {
+  background: white;
+  color: var(--color-danger-600);
+  border: 1px solid var(--color-danger-600);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+.btn-danger:hover {
+  background: var(--color-danger-600);
+  color: white;
+}
+
+.input-field {
+  border: 1px solid var(--color-ink-300);
+  padding: 0.6rem 0.8rem;
+  background: white;
+  width: 100%;
+  font-size: 0.925rem;
+}
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-ink-900);
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-ink-700);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.3rem;
+  display: block;
+}

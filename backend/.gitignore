@@ -1,0 +1,24 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# Data (generated at runtime)
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+data/documents/*
+!data/documents/.gitkeep
+data/datasets/*
+!data/datasets/.gitkeep
+data/platform.db
+*.db
+
+# OS
+.DS_Store
