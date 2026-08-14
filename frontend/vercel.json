@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://workforce-insights-dashboard-for.onrender.com/api/:path*" },
+    { "source": "/health", "destination": "https://workforce-insights-dashboard-for.onrender.com/health" }
+  ]
+}
