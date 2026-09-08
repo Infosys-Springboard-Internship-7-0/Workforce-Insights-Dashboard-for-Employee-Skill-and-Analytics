@@ -41,20 +41,20 @@
       "github_username": "01Dishapramanick"
     },
     {
-      "name": "Anil Yaka",
-      "contact": "yakaanil2006@gmail.com",
-      "course": "B.Tech CSE(AI&ML)",
-      "college": "Anil Neerukonda Institute of Technology and Sciences",
-      "address": "Visakhapatnam,Andhra Pradesh",
-      "github_username": "Yakaanil2006"
-    },
-    {
       "name": "Moulikea Murugesan",
       "contact": "moulikeamurugesan2004@gmail.com",
       "course": "MCA",
       "college": "M.Kumarasamy College of Engineering",
       "address": "Erode, Tamilnadu",
       "github_username": "Moulikea"
+    },
+    {
+      "name": "Anil Yaka",
+      "contact": "yakaanil2006@gmail.com",
+      "course": "B.Tech CSE(AI&ML)",
+      "college": "Anil Neerukonda Institute of Technology and Sciences",
+      "address": "Visakhapatnam,Andhra Pradesh",
+      "github_username": "Yakaanil2006"
     }
   ]
 }
