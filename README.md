@@ -207,7 +207,7 @@ The contributor roster is sourced from [contributors.json](contributors.json) an
 | <img src="https://github.com/Sanjivani0101.png?size=72" width="48" height="48" alt="Sanjivani Gurav avatar" /> | Sanjivani Gurav | sanjivanigurav106@gmail.com | Msc | Vivekanand College, Kolhapur | Pune, Maharashtra | [Sanjivani0101](https://github.com/Sanjivani0101) |
 | <img src="https://github.com/01Dishapramanick.png?size=72" width="48" height="48" alt="Disha Pramanick avatar" /> | Disha Pramanick | pramanickdisha88@gmail.com | BCA | B.P. Poddar Institute of Management & Technology | Kolkata, West Bengal | [01Dishapramanick](https://github.com/01Dishapramanick) |
 | <img src="https://github.com/Yakaanil2006.png?size=72" width="48" height="48" alt="Anil Yaka avatar" /> | Anil Yaka | yakaanil2006@gmail.com | B.Tech CSE(AI&ML) | Anil Neerukonda Institute of Technology and Sciences | Visakhapatnam,Andhra Pradesh | [Yakaanil2006](https://github.com/Yakaanil2006) |
-| <img src="https://github.com/MoulikeaMurugesan.png?size=72" width="48" height="48" alt="Moulikea Murugesan avatar" /> | Moulikea Murugesan | moulikeamurugesan2004@gmail.com | MCA | M.Kumarasamy College of Engineering | Erode, Tamilnadu | [MoulikeaMurugesan](https://github.com/MoulikeaMurugesan) |
+| <img src="https://github.com/Moulikea.png?size=72" width="48" height="48" alt="Moulikea Murugesan avatar" /> | Moulikea Murugesan | moulikeamurugesan2004@gmail.com | MCA | M.Kumarasamy College of Engineering | Erode, Tamilnadu | [Moulikea](https://github.com/Moulikea) |
 <!-- CONTRIBUTORS:END -->
 
 ---
