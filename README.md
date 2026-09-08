@@ -44,41 +44,6 @@ The objective of this project is to create a unified intelligence platform that 
 - Intelligent AI-powered recommendations for workforce planning and engagement.
 - Natural language interaction for rapid, data-driven workforce intelligence.
 
-## Project Scope
-
-The solution is intended to support end-to-end workforce intelligence across data ingestion, processing, analytics, forecasting, and reporting.
-
-### Data Sources
-
-- SAP SuccessFactors
-- Workday
-- Oracle HCM
-- Recruitment portals
-- Learning management systems
-- Employee engagement surveys
-
-### Core Data Types
-
-- Master employee data
-- Performance review records
-- Learning and certification history
-- Attrition history
-- Engagement survey responses
-- Recruitment funnel data
-
-## Modules to Be Implemented
-
-1. Integrate with major HRMS and talent platforms such as SAP SuccessFactors, Workday, Oracle HCM, recruitment portals, LMS, and engagement surveys.
-2. Ingest master data, performance reviews, learning records, attrition history, and engagement survey results.
-3. Perform data cleansing, transformation, metadata extraction, and workforce data modeling.
-4. Generate semantic indexes and vector embeddings to create a centralized workforce intelligence repository.
-5. Analyze performance, attrition trends, recruitment metrics, and engagement scores to identify organizational patterns.
-6. Develop predictive models for attrition risk, talent retention, workforce planning, and skill gap identification.
-7. Generate workforce health scores, talent risk indicators, and learning recommendations with confidence scoring.
-8. Build a web-based portal to visualize attrition trends, headcount analysis, diversity metrics, and recruitment funnel analytics.
-9. Enable conversational interaction to query workforce data, skill availability, and program recommendations.
-10. Deploy the platform for continuous monitoring, stakeholder feedback collection, and model refinement.
-
 ## Milestones
 
 ### Milestone 1
@@ -109,48 +74,78 @@ The solution is intended to support end-to-end workforce intelligence across dat
 - Conduct cloud deployment, system testing, and recommendation effectiveness evaluation.
 - Prepare project documentation, technical report, and final demonstration.
 
-## Evaluation Criteria
+## Project Structure
 
-The project will be evaluated based on the following:
+The repository is organized as an end-to-end workforce intelligence and RAG platform:
 
-- Workforce data from HR systems, recruitment platforms, learning systems, and engagement surveys is successfully integrated, processed, and modeled for analytics.
-- The AI engine accurately analyzes workforce trends, predicts attrition risks, identifies skill gaps, and generates meaningful recommendations.
-- The analytics platform provides dashboards, predictive insights, talent intelligence reports, and conversational analytics capabilities.
-- The solution is successfully deployed and achieves target metrics for prediction accuracy, workforce insight quality, stakeholder adoption, and system performance.
-- The implementation, documentation, testing, and final presentation are complete.
+```text
+Workforce-Insights-Dashboard-for-Employee-Skill-and-Analytics/
+├── raw-DATASET.csv                  # Uncleaned employee data sourced from Kaggle
+├── frontend/                        # Streamlit RAG platform frontend
+│   ├── app.py                        # Application entry point
+│   ├── services/                     # Backend/API integration services
+│   ├── ui_pages/                     # Dashboard, assistant, admin, and data pages
+│   └── utils/                        # Session and shared frontend utilities
+├── backend/                         # RAG platform backend and API services
+│   ├── app/                          # FastAPI application, routers, schemas, and services
+│   ├── migrations/                   # Database migration configuration and revisions
+│   └── scripts/                      # Backend setup and administration scripts
+├── Data_Cleaning/
+│   ├── Project Report.pdf            # Complete project report
+│   ├── CleanedDataset.csv            # Dataset after the data-cleaning process
+│   ├── Data Integration.ipynb        # Data integration workflow notebook
+│   ├── Data_Cleaning_EDA.ipynb       # Data cleaning and exploratory data analysis notebook
+│   ├── Presenttion PPT.pptx          # Project presentation deck
+│   └── Images/                       # EDA charts and key findings from Google Colab
+├── scripts/                         # Repository maintenance and automation scripts
+└── README.md                        # Project documentation
+```
 
-## Suggested Deliverables
+> **Data lineage:** `raw-DATASET.csv` is cleaned and explored in `Data_Cleaning/`, then the resulting insights support the dashboard, analytics, and RAG workflows.
 
-- Data ingestion and transformation pipeline
-- Workforce intelligence data model
-- Semantic search and embedding layer
-- Predictive analytics and recommendation engine
-- Interactive dashboard UI
-- Conversational analytics interface
-- Validation and evaluation scripts
-- Final technical documentation and presentation assets
+## Solution Architecture
 
-## Expected Capabilities
+The platform connects data preparation, persistence, retrieval, analytics, and user-facing insight delivery in one workflow:
 
-- Workforce performance monitoring
-- Attrition risk prediction
-- Skill gap analysis
-- Diversity and inclusion metrics tracking
-- Recruitment funnel analytics
-- Learning and development recommendations
-- Executive summary reporting
-- Natural language workforce intelligence queries
+```mermaid
+flowchart LR
+  A[raw-DATASET.csv<br/>Kaggle source] --> B[Data Cleaning & EDA<br/>Google Colab notebooks]
+  B --> C[CleanedDataset.csv]
+  C --> D[(PostgreSQL<br/>structured workforce data)]
+  C --> E[Analytics & ML<br/>attrition and skill insights]
+  D --> F[FastAPI Backend]
+  E --> F
+  F --> G[RAG Services<br/>retrieval and recommendations]
+  G --> H[Streamlit Frontend]
+  H --> I[HR Leaders & Stakeholders]
+  D --> J[Power BI<br/>reports and dashboards]
+  E --> J
+```
 
-## Recommended Project Structure
+### Architecture Layers
 
-If you expand this workspace into an implementation project, a clear structure could include:
+| Layer | Responsibility | Primary technologies |
+| --- | --- | --- |
+| Data foundation | Ingest, clean, validate, and integrate workforce data | CSV, Python, Pandas, Google Colab |
+| Persistence | Store structured workforce data for reliable access | PostgreSQL, SQLAlchemy, Alembic |
+| Intelligence | Generate analytics, retrieval context, and recommendations | RAG, embeddings, machine learning |
+| API and services | Expose secure application and analytics capabilities | FastAPI, Python |
+| Experience | Provide dashboards and conversational workforce insights | Streamlit, Power BI |
+| Communication | Present project findings and implementation outcomes | MS PowerPoint, Project Report |
 
-- `data/` for source and processed datasets
-- `notebooks/` for exploration and model experimentation
-- `src/` for application and analytics code
-- `models/` for serialized machine learning artifacts
-- `reports/` for exported dashboards, summaries, and evaluation outputs
-- `docs/` for project documentation and presentation material
+## Documents
+
+<p align="center">
+  <a href="https://1drv.ms/x/c/e932a70d90ac84a4/IQCDXRCpdXb3Q6L5XYM8dzvOAXGwN1OH6j1I-6wdH0W4seA" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Agile_Template.xlsx-0078D4?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Open Agile Template spreadsheet" />
+  </a>
+  <a href="https://1drv.ms/x/c/9bec95ec5bdab646/IQDJP2i0YiWUQKafu6-x6qh0AdkGqWqXsxYnFJxHAUbEIs4?e=FLIgYU" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Unit_Test_Plan.xlsx-107C10?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Open Unit Test Plan spreadsheet" />
+  </a>
+  <a href="https://1drv.ms/x/c/9bec95ec5bdab646/IQAXrpZdbNd_Qq9hzCl7z9jmAY7jMbijmysO2CwlEUM-kK8?e=YFHJgX" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Defect_Tracker_Template.xlsx-D83B01?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Open Defect Tracker Template spreadsheet" />
+  </a>
+</p>
 
 ## Professional Notes
 
@@ -163,9 +158,19 @@ If you expand this workspace into an implementation project, a clear structure c
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,git,github,vscode,tensorflow"/>
+<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,git,github,vscode,tensorflow"/>
 
 </p>
+
+| Category | Technologies and tools |
+| --- | --- |
+| Programming and API | Python, FastAPI |
+| Data engineering | Pandas, NumPy, CSV, Google Colab, Jupyter Notebooks |
+| AI and analytics | RAG, semantic search, embeddings, TensorFlow, predictive analytics |
+| Database and migrations | PostgreSQL, SQLAlchemy, Alembic |
+| Frontend and visualization | Streamlit, Power BI, Matplotlib, Seaborn |
+| Documentation and delivery | MS PowerPoint, PDF reporting |
+| Development workflow | Git, GitHub, Visual Studio Code |
 
 ## License
 
