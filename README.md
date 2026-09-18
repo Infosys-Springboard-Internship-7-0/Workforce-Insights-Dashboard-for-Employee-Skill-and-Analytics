@@ -145,20 +145,6 @@ flowchart LR
 | Experience | Provide dashboards and conversational workforce insights | Streamlit, Power BI |
 | Communication | Present project findings and implementation outcomes | MS PowerPoint, Project Report |
 
-## Documents
-
-<p align="center">
-  <a href="https://1drv.ms/x/c/e932a70d90ac84a4/IQCDXRCpdXb3Q6L5XYM8dzvOAXGwN1OH6j1I-6wdH0W4seA" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Agile_Template.xlsx-0078D4?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Open Agile Template spreadsheet" />
-  </a>
-  <a href="https://1drv.ms/x/c/9bec95ec5bdab646/IQDJP2i0YiWUQKafu6-x6qh0AdkGqWqXsxYnFJxHAUbEIs4?e=FLIgYU" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Unit_Test_Plan.xlsx-107C10?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Open Unit Test Plan spreadsheet" />
-  </a>
-  <a href="https://1drv.ms/x/c/9bec95ec5bdab646/IQAXrpZdbNd_Qq9hzCl7z9jmAY7jMbijmysO2CwlEUM-kK8?e=YFHJgX" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Defect_Tracker_Template.xlsx-D83B01?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Open Defect Tracker Template spreadsheet" />
-  </a>
-</p>
-
 ## Professional Notes
 
 - The project should follow secure handling practices for HR and employee data.
