@@ -30,6 +30,8 @@ The solution combines large language models, retrieval-augmented generation, pre
   <img src="https://img.youtube.com/vi/ZOphMyBIP94/maxresdefault.jpg" alt="Workforce Insights Dashboard Demo Video" width="100%" />
 </a>
 
+<p align="center">AI-Powered Workforce Insights Dashboard | Power BI, RAG & Generative AI | Project Demo <a href="https://www.youtube.com/watch?v=ZOphMyBIP94&t=0s" target="_blank" rel="noopener noreferrer"><br>(Click here to view the full video on YouTube)</a></p>
+
 ## Project Objective
 
 The objective of this project is to create a unified intelligence platform that can:
