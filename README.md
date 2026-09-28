@@ -24,6 +24,12 @@ This project focuses on building an Workforce Insights Dashboard for Employee Sk
 
 The solution combines large language models, retrieval-augmented generation, predictive analytics, semantic search, and agentic AI workflows to transform fragmented HR data into strategic business intelligence. It is designed to support HR leaders, business stakeholders, and executives with real-time insights and conversational access to workforce information.
 
+## Demo Video
+
+<a href="https://www.youtube.com/watch?v=ZOphMyBIP94&t=0s" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/ZOphMyBIP94/maxresdefault.jpg" alt="Workforce Insights Dashboard Demo Video" width="100%" />
+</a>
+
 ## Project Objective
 
 The objective of this project is to create a unified intelligence platform that can:
